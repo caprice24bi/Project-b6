@@ -1,0 +1,13 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #e91e63;
+  font-size: 2em;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+}
