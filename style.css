@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fce4ec;
+  overflow: hidden;
+}
+
+.cake {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #f8bbd0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.candle {
+  position: absolute;
+  top: -60px;
+  left: 45px;
+  width: 10px;
+  height: 60px;
+  background: #fff59d;
+  border-radius: 2px;
+}
+
+.flame {
+  position: absolute;
+  top: -75px;
+  left: 47px;
+  width: 6px;
+  height: 15px;
+  background: orange;
+  border-radius: 50%;
+  animation: flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(1.2); opacity: 0.8; }
+}
+
+canvas#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
